@@ -1,0 +1,77 @@
+{
+  "name": "UnterbejTheme",
+  "author": "LogMedia",
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@UnterbejTheme"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/unterbej-theme.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ],
+  "previewMedia": "/bundles/unterbejtheme/logo/logoUnterbej.png",
+  "config": {
+    "fields": {
+      "sw-color-brand-primary": {
+        "value": "#2596be"
+      },
+      "sw-color-brand-secondary": {
+        "value": "#f0f0f0"
+      },
+      "sw-border-color": {
+        "type": "color",
+        "value": "#d3d6da"
+      },
+      "sw-font-family-headline": {
+        "type": "fontFamily",
+        "value": "'Montserrat', sans-serif"
+      },
+      "sw-text-color": {
+        "type": "color",
+        "value": "#5e6468"
+      },
+      "sw-text-color-headline": {
+        "type": "color",
+        "value": "#5c8f00"
+      },
+      "sw-font-family-base": {
+        "type": "fontFamily",
+        "value": "'Open Sans', sans-serif"
+      },
+      "sw-color-price": {
+        "type": "color",
+        "value": "#2596be"
+      },
+      "sw-color-buy-button": {
+        "type": "color",
+        "value": "#2596be"
+      },
+      "sw-color-buy-button-text": {
+        "type": "color",
+        "value": "#fff"
+      },
+      "sw-logo-desktop": {
+        "type": "media",
+        "value": "/bundles/unterbejtheme/logo/logoUnterbej.png"
+      },
+      "sw-logo-tablet": {
+        "type": "media",
+        "value": "/bundles/unterbejtheme/logo/logoUnterbej.png"
+      },
+      "sw-logo-mobile": {
+        "type": "media",
+        "value": "/bundles/unterbejtheme/logo/logoUnterbej.png"
+      }
+    }
+  }
+}

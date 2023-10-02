@@ -1,0 +1,33 @@
+version: '3'
+services:
+  shop:
+    container_name: shopware_blasy
+    image: dockware/dev:6.5.4.0
+    ports:
+      - "22:22"     # ssh
+      - "80:80"     # apache2
+      - "8888:8888" # watch admin
+      - "9998:9998" # watch storefront proxy (not needed if you start with "make watch-storefront")
+      - "9999:9999" # watch storefront
+    volumes:
+      - "db_volume:/var/lib/mysql"
+      - "shop_volume:/var/www/html"
+      # - "./src:/var/www/html"
+    networks:
+      - web
+    environment:
+      - XDEBUG_ENABLED=0
+## ***********************************************************************
+##  VOLUMES
+## ***********************************************************************
+volumes:
+  db_volume:
+    driver: local
+  shop_volume:
+    driver: local
+## ***********************************************************************
+##  NETWORKS
+## ***********************************************************************
+networks:
+  web:
+    external: false
